@@ -6,3 +6,15 @@
     }
    
  })
+
+
+ function sample(a,b){
+
+   return (a+b);
+ }
+
+sample(10,20);
+
+sample(30,40);
+
+sample(100,200);
