@@ -2,7 +2,7 @@ import "./Greeting.css";
 
 function Greeting({name, age, education, salary}) {
 
-    console.log("props---", name, age, education, salary)
+    // console.log("props---", name, age, education, salary)
 
     return (
         // <div style={{border: "2px solid black"}}>

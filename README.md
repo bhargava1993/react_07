@@ -224,7 +224,13 @@ Read only
 
 
 
+<> --> what is fragments
 
+why we need key prop?
+
+The "key" prop gives each element in a list a unique identity so react can efficiently identify which items have changes, been added, or removed.
+
+what is diffenece beetween state and props?
 
 
 
