@@ -233,4 +233,11 @@ The "key" prop gives each element in a list a unique identity so react can effic
 what is diffenece beetween state and props?
 
 
+what is useState?
+
+useState is a React Hook used to store and manage data that can change inside a component.
+it will act as local storage to same component
+when ever useState gets called page will render automatically, so that updated data will display in to browser.
+
+
 

@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Greeting from './components/Greeting';
 import Student from './components/Student';
+import Counter from './components/Counter';
+import InputState from './components/InputState';
 
 
 function App() {
@@ -26,7 +28,11 @@ function App() {
       <Greeting name="Harsha" age={23} education="Btch" salary={20000}/>
       <Greeting name="koushik" age={22} education="Btech" salary={20000}/> */}
      
-     <Student name="Koushik" names={names}/>
+     {/* <Student name="Koushik" names={names}/> */}
+
+     {/* <Counter /> */}
+
+     <InputState />
      
     </div>
   );
