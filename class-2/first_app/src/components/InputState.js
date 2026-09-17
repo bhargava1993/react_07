@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Map from "./Map.jsx";
 
 function InputState() {
 
@@ -10,6 +11,11 @@ function InputState() {
     const [empValue, SetEmpValue] = useState(sampleObj);
 
     const [groupEmp, SetGroupEmp] = useState([]);
+
+    useEffect(() => {
+        console.log("without dependency array");
+        document.title="bhargava"
+    },[])
 
     function handleInput(event) {
         // console.log(event.target.value)
@@ -23,25 +29,27 @@ function InputState() {
         // console.log("empValue---", empValue)
         // SetGroupEmp([...groupEmp,empValue]);
 
-        let newEmp = {name,age,salary};
+        let newEmp = { name, age, salary };
         SetEmpValue(newEmp)
 
-        SetGroupEmp((prev)=>[...prev,newEmp]);
+        SetGroupEmp((prev) => [...prev, newEmp]);
         console.log("groupEmp---", groupEmp)
 
         handleClear();
     }
 
-    function handleClear(){
-            SetName("");
-            SetAge("");
-            SetSalary("");
+    function handleClear() {
+        SetName("");
+        SetAge("");
+        SetSalary("");
     }
+
+
     return (
         <>
             <label>Name:</label>
             <input type="text" placeholder="Enter name"
-                onChange={handleInput} id="nameID" value={name}/>
+                onChange={handleInput} id="nameID" value={name} />
             <br></br>
             <label>Age:</label>
 
@@ -50,7 +58,7 @@ function InputState() {
             <br></br>
             <label>Salary:</label>
 
-            <input onChange={(e) => SetSalary(e.target.value)} value={salary}/>
+            <input onChange={(e) => SetSalary(e.target.value)} value={salary} />
 
             <h1>Hello: {name}</h1>
             <h1>Age:{age}</h1>
@@ -62,12 +70,13 @@ function InputState() {
             <h2>Employees</h2>
 
             {groupEmp.map((emp, index) => (
-                <div key={index}>
-                    <p>Name: {emp.name}</p>
-                    <p>Age: {emp.age}</p>
-                    <p>Salary: {emp.salary}</p>
-                    <hr />
-                </div>
+                <Map emp={emp} key={index} />
+                // <div key={index}>
+                //     <p>Name: {emp.name}</p>
+                //     <p>Age: {emp.age}</p>
+                //     <p>Salary: {emp.salary}</p>
+                //     <hr />
+                // </div>
             ))}
         </>
     );

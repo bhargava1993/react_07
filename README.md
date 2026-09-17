@@ -160,8 +160,11 @@ vite:
 ----
 2. second way to create react application
 
-npm create vite@latest <application_name> --templaate react
+npm create vite@latest <application_name> --template react
 
+To start application:
+-----------------------
+npm run dev
 
 SPA: single page application
 MPA: multi page application
@@ -241,3 +244,83 @@ when ever useState gets called page will render automatically, so that updated d
 
 
 
+-------------------------------------------
+
+
+persion life cycle:
+-------------------
+
+birth
+
+update
+
+dead
+
+components  lifecycle methods:
+-----------------------------
+Mounting -> create/display 
+
+updating -> component updatation phase
+
+UnMounting -> component delete 
+
+
+useEffect(()=>{})
+
+useEffect(()=>{},[]) -> with dependency array
+
+useEffect(()=>{},[true]) -> with dependency array and condition
+
+useEffect(()=>{
+
+    return ()=>{}
+},[]) -> clean up function
+--------------------------
+
+mounting phase:
+
+component created
+--------------------------
+constructor()
+render()
+componentDidMount()
+
+updateing stage:
+-----------------
+render()
+componentDidUpdate()
+componentShouldUpdate()
+
+unmount phage:
+------------------
+componentWillUnmount()
+
+
+Conditional Rendaring:
+----------------------
+Conditional redaring in React means redaring different UI elements based on a condition.
+
+ternary if 
+&&
+
+success = true
+failure = false
+
+let number= 4;
+
+if(number >= 5){
+console.log(true)
+}else{
+console.log(false)
+}
+
+let findNumber = number >= 5 ? console.log(true) : console.log(false)
+
+
+let isloggedIn = true;
+
+{isloggedIn ? <h1>Dashboard <h1> : <h1>login<h1>}
+
+{}
+
+{isAdmin && <button>Delete</button>}

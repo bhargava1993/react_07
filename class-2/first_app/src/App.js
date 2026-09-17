@@ -4,6 +4,7 @@ import Greeting from './components/Greeting';
 import Student from './components/Student';
 import Counter from './components/Counter';
 import InputState from './components/InputState';
+import SideEffects from './components/SideEffects';
 
 
 function App() {
@@ -32,8 +33,9 @@ function App() {
 
      {/* <Counter /> */}
 
-     <InputState />
+     {/* <InputState /> */}
      
+     <SideEffects />
     </div>
   );
 
