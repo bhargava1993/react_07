@@ -324,3 +324,43 @@ let isloggedIn = true;
 {}
 
 {isAdmin && <button>Delete</button>}
+
+
+-------------------------------------------------
+
+Routing:     Root
+--------
+
+Banglore
+Hyd
+Pune
+Kadiri
+hindupur
+----------------------
+india/banglore/skillboard/8
+india/{}/{}/{}
+india/hyd/manikonda
+india/pune
+
+us
+japan
+Garmani
+
+
+http://localhost:4200
+
+------------------------------------
+
+react-router-dom
+
+npm install react-router-dom
+
+npm i react-router-dom
+
+
+1.BrowserRouter
+2.Routes
+3.Route
+4.link
+5.useParams
+6.Navigate

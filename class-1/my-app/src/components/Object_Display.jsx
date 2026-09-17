@@ -75,6 +75,9 @@ export default function Object_Display() {
         }
     ]
 
+    fetch()
+
+    
     const [filteredProduts, setFilteredProduts] = useState(products)
     const [searchTitle, setSearchTitle] = useState("");
     
