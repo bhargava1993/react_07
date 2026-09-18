@@ -364,3 +364,71 @@ npm i react-router-dom
 4.link
 5.useParams
 6.Navigate
+
+how to create protected routes?
+
+
+-------------------------------------------------------
+
+
+install postman?
+https://www.postman.com/downloads/?_pmt=pmMTc2Njk3ODM1MTY0NQ%3D%3D%7CPM.MjAyNS0xMi0yOVQwMzoxOToxMS42Mzha&anon=61942ddd-4498-4c72-8515-6914002b4ed2&_pm_handover=eyJ1aWQiOiJQTS5NakF5TlMweE1pMHlPVlF3TXpveE9Ub3hNUzQyTXpoYSIsImlhdCI6MTc4OTY5NzA4OSwiZXhwIjoxNzg5Njk3Mzg5LCJhdWQiOiJ3d3cucG9zdG1hbi5jb20iLCJpc3MiOiJsZWFybmluZy5wb3N0bWFuLmNvbSJ9.LLFuqrS_KoV5x_oJvk81JtGsLrGSn9jflIdKsqqu4l8
+
+
+why we need postman?
+to test api's
+
+--------------------------------------------------------
+
+Axios?
+
+npm i axios
+
+
+what is http?  
+
+HTTP = HyperText Transfer Protocol
+HTTPS = HyperText Transfer Protocol Secure
+
+Http methods:
+
+GET
+POST
+PUT
+PATCH
+DELETE
+
+CRUD:   
+
+C- Create  - POST
+R - Read   - GET
+U - update - PUT/PATCH
+D - delete - DELETE
+
+JSON: Javascript Object Notation
+
+
+status codes:
+
+200 - success
+400 - error
+500 - error
+
+test api's:
+-----------
+
+https://dummyjson.com/docs/users
+
+page1- 0-30
+page2- 30 -60
+page3- 60-90
+
+
+products: 
+
+https://fakestoreapi.com/
+
+
+https://fakestoreapi.com/products/
+
+-------------------------------------------------------
