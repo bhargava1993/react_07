@@ -11,3 +11,172 @@ https://legacy.reactjs.org/docs/hooks-intro.html
 1. Library and Framework difference?
 
 2. CSR vs SSR vs SSG
+
+1. React Basics
+
+What is React?
+Why do we use React?
+What are the main features of React?
+What is a component in React?
+What is JSX?
+Why do we use JSX?
+Can we use React without JSX?
+
+2. Components
+What is a functional component?
+What is a class component?
+What is the difference between functional and class components?
+Why are functional components preferred today?
+Can a component return multiple elements?
+What is a Fragment?
+What is the difference between <>...</> and <React.Fragment>?
+What is a reusable component?
+What is the difference between a component and an element?
+
+3. Props
+What are props?
+Why do we use props?
+How do you pass props from parent to child?
+Are props mutable?
+What happens if we modify props directly?
+How do you pass multiple props?
+How do you pass a function as a prop?
+How do you pass an object or array as a prop?
+What is prop drilling?
+How can we avoid prop drilling?
+
+4. State
+What is state?
+Why do we need state?
+What is useState()?
+How does useState() work?
+What does useState() return?
+Why should we not modify state directly?
+What happens when state changes?
+Does updating state immediately update the UI?
+What is the difference between props and state?
+Can a child component modify parent state?
+What is lifting state up?
+When should we lift state up?
+What are the drawbacks of lifting state up?
+
+5. Rendering
+What causes a React component to re-render?
+What is re-rendering in React?
+Does re-rendering mean the DOM is recreated?
+What is conditional rendering?
+How do you render elements conditionally?
+What is list rendering?
+Why do we use map() in React?
+Why are keys required when rendering lists?
+What happens if we don't provide keys?
+Why should we avoid using array indexes as keys?
+
+6. Virtual DOM
+What is the Virtual DOM?
+What is the difference between Real DOM and Virtual DOM?
+Why does React use Virtual DOM?
+What is reconciliation?
+What algorithm does React use for reconciliation?
+What is the diffing algorithm?
+How does React identify changed elements?
+What is the Fiber architecture?
+What is React Fiber?
+How does React update the Real DOM?
+
+7. Hooks
+What are Hooks?
+Why were Hooks introduced?
+What are the Rules of Hooks?
+Why can't Hooks be called inside loops or conditions?
+What is useState()?
+What is useEffect()?
+What is useRef()?
+What is useMemo()?
+What is useCallback()?
+What is useContext()?
+What is useReducer()?
+What is the difference between useState() and useReducer()?
+Can we create our own Hook?
+What is a custom Hook?
+
+8. useEffect
+Why do we use useEffect()?
+When does useEffect() execute?
+What is the dependency array?
+What happens when the dependency array is empty?
+What happens when we don't provide a dependency array?
+What happens when we provide dependencies?
+What is the cleanup function in useEffect()?
+When does the cleanup function execute?
+How do you call an API using useEffect()?
+How do you prevent unnecessary API calls?
+Can we make the useEffect callback directly async?
+How do we handle API cleanup in useEffect()?
+What is an infinite loop in useEffect()?
+
+9.React Router
+
+What is React Router?
+Why do we need React Router?
+What is BrowserRouter?
+What is Routes?
+What is Route?
+What is Link?
+What is NavLink?
+What is useNavigate()?
+What is useParams()?
+What is useLocation()?
+How do you create nested routes?
+How do you implement protected routes?
+How do you redirect programmatically?
+How do you pass state while navigating?
+
+10.API Integration
+How do you call an API from React?
+How do you use Axios with React?
+What is the difference between fetch() and Axios?
+How do you send query parameters?
+How do you send request headers?
+How do you send a request body?
+How do you handle API errors?
+How do you show loading state?
+How do you cancel an API request?
+How do you handle authentication tokens?
+Where should API calls be placed in a React application?
+
+11.useRef
+Why do we use useRef()?
+What is the difference between useRef() and useState()?
+Does changing useRef() cause a re-render?
+How do you access a DOM element using useRef()?
+How can useRef() store previous values?
+What are real-world use cases of useRef()?
+
+12.Context API
+What is Context API?
+Why do we need Context API?
+How does Context API work?
+What is createContext()?
+What is a Provider?
+What is useContext()?
+How do you create a custom Context?
+What is the difference between Context API and props?
+What is the difference between Context API and Redux?
+What are the drawbacks of Context API?
+Can Context API cause unnecessary re-renders?
+
+13.Performance
+What causes unnecessary re-renders?
+What is React.memo()?
+When should we use React.memo()?
+What is useMemo()?
+What is useCallback()?
+What is the difference between useMemo() and useCallback()?
+How do React.memo(), useMemo(), and useCallback() work together?
+What is code splitting?
+What is lazy loading?
+What is React.lazy()?
+What is Suspense?
+What is tree shaking?
+What is the difference between code splitting and tree shaking?

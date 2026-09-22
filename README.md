@@ -57,6 +57,16 @@ data
 data
 
 --------------------------------------
+Real DOM
+virtual DOM --> it's a copy of real dom, which is lightweight javascript representtion of the UI.
+
+Reconciliation --> diffing algorithm
+
+modern React uses the  Fiber architecture to implemt Reconciliation
+
+
+
+
 
 
 1. data binding
@@ -88,8 +98,11 @@ data
     data
 
     local
+    state Lifting up
+
     global --> context api
-                redux toolkit
+               redux toolkit
+               zustand
 
 ---------------------------------------------------
 

@@ -1,0 +1,62 @@
+React Fundamentals
+--------------------
+What is React and why do we use it?
+What are the main features of React?
+What is JSX?
+What is the difference between JSX and HTML?
+What is a React component?
+What is the difference between functional and class components?
+What are props in React?
+What is state in React?
+What is the difference between props and state?
+What is component composition?
+Rendering & Virtual DOM
+What is the Virtual DOM?
+What is the difference between Virtual DOM and Real DOM?
+What is reconciliation in React?
+Which algorithm does React use for reconciliation?
+What is React Fiber?
+What causes a React component to re-render?
+What is conditional rendering?
+Why are keys required when rendering lists?
+Why should we avoid using array indexes as keys?
+What happens when a parent component re-renders?
+
+Hooks
+----------
+What are React Hooks and why were they introduced?
+What are the Rules of Hooks?
+What is useState()?
+How does useState() work internally?
+What is useEffect()?
+How does the dependency array in useEffect() work?
+What is the cleanup function in useEffect()?
+How do you call an API using useEffect()?
+What is useRef()?
+What is the difference between useRef() and useState()?
+
+Performance
+----------------
+What is useMemo()?
+What is useCallback()?
+What is the difference between useMemo() and useCallback()?
+What is React.memo()?
+What is the difference between React.memo(), useMemo(), and useCallback()?
+How do you prevent unnecessary re-renders?
+What is code splitting?
+What is lazy loading in React?
+What is React.lazy()?
+What is Suspense?
+
+State Management & Advanced React
+--------------------------------------
+What is lifting state up?
+What is prop drilling and how can you avoid it?
+What is Context API?
+What are the advantages and disadvantages of Context API?
+What is Redux and why is it used?
+What is Redux Toolkit?
+What is the difference between Context API and Redux?
+What is a custom Hook?
+How do you handle API calls, loading states, and errors in a real React application?
+How would you optimize the performance of a large-scale React application?
