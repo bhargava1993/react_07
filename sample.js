@@ -23,13 +23,26 @@
 
 // sample(100,200);
 
-let count = 0;
-const Timer = setInterval(() => {
-  console.log("Timer running", count++);
+// let count = 0;
+// const Timer = setInterval(() => {
+//   console.log("Timer running", count++);
 
-  if (count === 5) {
-    clearInterval(Timer);
-  }
-}, 1000)
+//   if (count === 5) {
+//     clearInterval(Timer);
+//   }
+// }, 1000)
+
+
+const employees = [
+  { id: 1, name: "harsha", age: "22", "salary": 10000 },
+  { id: 2, name: "koushik", age: "22", "salary": 10000 },
+  { id: 3, name: "deepika", age: "22", "salary": 10000 },
+  { id: 4, name: "gangiReddy", age: "22", "salary": 10000 }
+]
+const filteredEmployee = employees.filter((emp) => {
+  console.log(emp.id, emp.id !== 4)
+  return emp.id !== 4});
+
+console.log(filteredEmployee)
 
 
