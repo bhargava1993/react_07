@@ -15,14 +15,17 @@ function App() {
 
   const [selectedEmployee, setSelectedEmployee] = useState(null);
 
-  const [showForm, setShowForm]=useState(false);
+  const [showForm, setShowForm] = useState(false);
 
-  function handleAdd(event){
-
+  function handleAdd(event) {
+    console.log("handleAdd----------");
+    setShowForm(true);
+    setSelectedEmployee(null);
   }
   function handleEdit(emp) {
     // console.log("handleEdit button---", emp);
     setSelectedEmployee(emp)
+    setShowForm(true);
     // console.log("handleEdit selectedEmployee---", selectedEmployee);
   }
   function handleDelete(id) {
@@ -32,11 +35,10 @@ function App() {
     setEmployees(filteredEmployee)
   }
 
-
-
   function handleClose() {
     console.log("onClose button");
     setSelectedEmployee(null);
+    setShowForm(false);
   }
 
   function handleSubmit(employeeData) {
@@ -61,11 +63,13 @@ function App() {
       //new employee data
 
       const newEmployee = {
-
+        id: employees.length + 1,
         ...employeeData
       }
       setEmployees([...employees, newEmployee])
     }
+    setShowForm(false);
+    setSelectedEmployee(null);
   }
 
   return (
@@ -77,11 +81,11 @@ function App() {
         onEdit={handleEdit}
         onDelete={handleDelete}
       />
-      <EmployeeForm
+      {showForm && <EmployeeForm
         employee={selectedEmployee}
         onSubmit={handleSubmit}
         onClose={handleClose}
-      />
+      />}
     </>
   )
 }

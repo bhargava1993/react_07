@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 function EmployeeForm({ employee, onSubmit, onClose }) {
 
     const [formData, setFormData] = useState({
-        id:"",
+        // id: "",
         name: "",
         age: "",
         salary: ""
@@ -13,14 +13,14 @@ function EmployeeForm({ employee, onSubmit, onClose }) {
 
         if (employee) {
             setFormData({
-                id:employee.id,
+                // id: employee.id,
                 name: employee.name,
                 age: employee.age,
                 salary: employee.salary
             })
         } else {
             setFormData({
-                id:"",
+                // id: "",
                 name: "",
                 age: "",
                 salary: ""
@@ -47,7 +47,7 @@ function EmployeeForm({ employee, onSubmit, onClose }) {
         event.preventDefault();
 
         onSubmit({
-            id:formData.id,
+            // id: formData.id,
             name: formData.name,
             age: formData.age,
             salary: formData.salary
@@ -57,9 +57,9 @@ function EmployeeForm({ employee, onSubmit, onClose }) {
 
     return (
         <>
-            <h3>Employee From</h3>
+            <h3>{employee ? "Edit Empoyee" : "Add Employee"}</h3>
             <form onSubmit={handleSubmit}>
-                 <div>
+                {/* <div>
                     <label>Id</label>
                     <input
                         type="text"
@@ -67,7 +67,7 @@ function EmployeeForm({ employee, onSubmit, onClose }) {
                         value={formData.id}
                         onChange={handleChange}
                     />
-                </div>
+                </div> */}
                 <div>
                     <label>Name</label>
                     <input
