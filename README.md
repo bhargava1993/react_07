@@ -448,3 +448,19 @@ https://fakestoreapi.com/products/
 
 Context api:
 -------------
+
+
+useEffectlayout -->
+
+useRef: 
+------
+dom
+
+1. Access a DOM element directly
+2. without causing re-render display values into browser
+
+
+diffent beetween useState and useRef?
+
+useState --> change value -> UI re-renders
+useRef ---> change value -> UI does not re-render

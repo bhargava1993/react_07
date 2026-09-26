@@ -46,3 +46,12 @@ const filteredEmployee = employees.filter((emp) => {
 console.log(filteredEmployee)
 
 
+
+
+
+1. table data display
+2. buttons
+3. functions
+4. useState
+5. show and hide (true/false)
+6. api integartion
