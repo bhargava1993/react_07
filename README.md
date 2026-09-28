@@ -464,3 +464,17 @@ diffent beetween useState and useRef?
 
 useState --> change value -> UI re-renders
 useRef ---> change value -> UI does not re-render
+
+
+
+optimization:
+-------------
+Optimization means avoiding unnecessry work. 
+It does not mean preventing every render.
+
+1. React.memo --> Component
+React.memo--> will do Shallow Copy
+
+
+2. useMemo   --> Value
+3. useCallback  --> Function
