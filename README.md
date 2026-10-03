@@ -475,6 +475,26 @@ It does not mean preventing every render.
 1. React.memo --> Component
 React.memo--> will do Shallow Copy
 
-
 2. useMemo   --> Value
 3. useCallback  --> Function
+
+------------------------------------------
+Dynamic Imports
+code splitting
+lazy loading 
+suspense
+
+
+Home
+products
+reports
+admin
+settings
+
+------------------------------------
+
+storage:
+
+localstorage, session storage, cookie
+
+athentication, autrizarion
