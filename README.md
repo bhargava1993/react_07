@@ -497,4 +497,18 @@ storage:
 
 localstorage, session storage, cookie
 
+
+
+Local  = long
+session = short
+cookie = client - server
+
+HttpOny:true
+expires
+
+
+-----------------------------------
+
+useEffect vs useLayoutEffect
+
 athentication, autrizarion
